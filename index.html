@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Pool Devil - Swimming Pool Maintenance & Repairs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Basic SEO -->
+  <meta name="description" content="The Pool Devil - Your Pool, Our Passion. Professional swimming pool maintenance and repairs." />
+  <meta name="keywords" content="pool maintenance, pool cleaning, pool repairs, swimming pool service" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #ffffff;
+      background-color: #000000;
+      line-height: 1.5;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 100vh;
+      width: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.85)),
+        url("https://github.com/moikkasisu/img-resources/raw/2f76d0e7cbaf79982a83c3226446d90eb3f67b9c/F0035325-Girl_jumping_into_swimming_pool.jpg")
+        center center / cover no-repeat fixed;
+    }
+
+    .hero-inner {
+      padding: 2rem;
+      max-width: 900px;
+    }
+
+    .brand-title {
+      font-size: 3.2rem;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-shadow: 0 4px 18px rgba(0,0,0,0.9);
+    }
+
+    .tagline {
+      margin-top: 0.75rem;
+      font-size: 1.6rem;
+      font-weight: 500;
+      text-shadow: 0 3px 12px rgba(0,0,0,0.95);
+    }
+
+    .cta-btn {
+      margin-top: 2.2rem;
+      padding: 0.95rem 2.9rem;
+      border: none;
+      border-radius: 999px;
+      background-color: #00bcd4;
+      color: #000;
+      font-weight: 800;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      cursor: pointer;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.95);
+      transition: all 0.25s ease;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(0,0,0,1);
+      background-color: #26c6da;
+    }
+
+    /* CONTACT SECTION */
+
+    .contact-section {
+      background-color: #02030a;
+      padding: 3.5rem 1.5rem 2.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contact-container {
+      width: 100%;
+      max-width: 480px;
+      background: rgba(0,0,0,0.9);
+      padding: 2.2rem 1.9rem;
+      border-radius: 18px;
+      box-shadow: 0 14px 40px rgba(0,0,0,0.95);
+    }
+
+    .contact-heading {
+      font-size: 2rem;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      margin-bottom: 0.4rem;
+    }
+
+    .contact-subtitle {
+      font-size: 0.9rem;
+      text-align: center;
+      margin-bottom: 1.9rem;
+      color: rgba(255,255,255,0.8);
+    }
+
+    label {
+      display: block;
+      font-size: 0.78rem;
+      margin-bottom: 0.35rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: rgba(255,255,255,0.9);
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.72rem 0.8rem;
+      margin-bottom: 1.1rem;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      background-color: #111726;
+      color: #ffffff;
+      font-size: 0.9rem;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.06);
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: rgba(255,255,255,0.35);
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .checkbox-row {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      margin-bottom: 1.4rem;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.85);
+    }
+
+    .checkbox-row input {
+      width: auto;
+      margin: 0;
+      box-shadow: none;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 0.9rem 1.5rem;
+      border-radius: 999px;
+      border: none;
+      background-color: #00bcd4;
+      color: #000;
+      font-weight: 800;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      cursor: pointer;
+      box-shadow: 0 8px 24px rgba(0,0,0,1);
+      transition: all 0.25s ease;
+    }
+
+    .submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(0,0,0,1);
+      background-color: #26c6da;
+    }
+
+    /* FOOTER */
+
+    .footer {
+      padding: 1.6rem 1rem 2.2rem;
+      background-color: #000000;
+      color: #8b93a6;
+      font-size: 0.75rem;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+
+    /* COOKIE BANNER */
+
+    .cookie-banner {
+      position: fixed;
+      bottom: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 480px;
+      width: calc(100% - 2rem);
+      background-color: #111726;
+      color: #ffffff;
+      padding: 0.85rem 1rem;
+      border-radius: 14px;
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      font-size: 0.72rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,1);
+      z-index: 50;
+    }
+
+    .cookie-banner button {
+      margin-left: auto;
+      padding: 0.42rem 0.95rem;
+      border: none;
+      border-radius: 999px;
+      background-color: #00bcd4;
+      color: #000;
+      font-weight: 700;
+      font-size: 0.7rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .cookie-banner button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.9);
+      background-color: #26c6da;
+    }
+
+    @media (max-width: 600px) {
+      .brand-title {
+        font-size: 2.4rem;
+      }
+
+      .tagline {
+        font-size: 1.25rem;
+      }
+
+      .hero {
+        background-attachment: scroll;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="brand-title">The Pool Devil</div>
+      <div class="tagline">Your Pool, Our Passion</div>
+      <button class="cta-btn" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">
+        Contact Us
+      </button>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <div class="contact-container">
+      <h2 class="contact-heading">Contact Us</h2>
+      <p class="contact-subtitle">Drop us a line and we'll get back to you as soon as possible.</p>
+
+      <!--
+        For a static site, this example uses mailto.
+        Replace "info@thepooldevil.com.au" with your real email,
+        or hook this form to your backend/service later.
+      -->
+      <form action="mailto:info@thepooldevil.com.au" method="post" enctype="text/plain">
+        <label for="name">Name</label>
+        <input id="name" name="Name" type="text" required />
+
+        <label for="email">Email *</label>
+        <input id="email" name="Email" type="email" required />
+
+        <label for="phone">Phone</label>
+        <input id="phone" name="Phone" type="tel" />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="Message" placeholder="Tell us about your pool, location, and how we can help."></textarea>
+
+        <div class="checkbox-row">
+          <input id="subscribe" type="checkbox" name="Subscribe" />
+          <label for="subscribe" style="margin:0; text-transform:none; letter-spacing:0;">
+            Sign me up for updates and promotions.
+          </label>
+        </div>
+
+        <button type="submit" class="submit-btn">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div>&copy; 2025 The Pool Devil - All Rights Reserved.</div>
+    <div>Static single-page site.</div>
+  </footer>
+
+  <!-- COOKIE BANNER -->
+  <div class="cookie-banner" id="cookie-banner">
+    <span>This website uses cookies to enhance your experience.</span>
+    <button onclick="document.getElementById('cookie-banner').style.display='none';">
+      Accept
+    </button>
+  </div>
+
+</body>
+</html>
